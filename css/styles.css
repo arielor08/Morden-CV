@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    line-height: 2;
+}
+
+h1 {
+    margin: 100px auto 0 auto;
+    font-family: 'Courgette', serif;
+    font-size: 5.625rem;
+    color: #ecb390;
+    line-height: 2;
+}
+
+h2 {
+    font-family: 'Righteous', serif;
+    font-size: 2.5rem;
+    color: #ecb390;
+}
+
+h3 {
+    color: #df7861;
+    font-family: 'Righteous', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #df7861;
+}
+
+hr {
+    border-style: dotted none none none;
+    border-color: #ecb390;
+    width: 5%;
+    height: 50px;
+    border-width: 5px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.top-container {
+    background-color: #fcf8e8;
+    padding-top: 100px;
+    position: relative;
+}
+
+.top-cloud {
+    position: relative;
+    left: 150px;
+}
+
+.bottom-cloud {
+    left: 250px;
+    position: absolute;
+}
+
+.profile-description {
+    width: 40%;
+    margin: auto;
+}
+
+.sub-title {
+    font-weight: normal;
+}
+
+.skills-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.web-des-img {
+    width: 25%;
+    float: left;
+    margin: auto 30px auto auto;
+}
+
+.web-dev-img {
+    width: 25%;
+    float: right;
+}
+
+.code-img {
+    width: 25%;
+}
+
+.pcontact {
+    width: 40%;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ecb390;
+    padding: 20px;
+    margin: 30px auto;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.595rem;
+    box-shadow: 2px 3px #999;
+}
+
+.button:hover {
+    background-color: #df7861;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #df7861;
+    padding: 50px;
+    border: thin;
+    color: white;
+}
+
+.footer-link {
+    color: #ecb390;
+}
+
+.footer-text {
+    color: white;
+    font-size: 0.9rem;
+}
