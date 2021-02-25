@@ -1,69 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette|Righteous|Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Righteous|Roboto&display=swap" rel="stylesheet">
+    <title>Edwin Ariel Portfolio</title>
+  </head>
 
-    <title>Edwin Ariel</title>
-</head>
-
-<body>
-
-
+  <body>
     <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Ariel.</h1>
-        <h2 class="sub-title">a <span class="underline">pro</span>grammer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img class="mountain-img" src="images/mountain.png" alt="mountain-img">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
+      <h1>I'm Ariel.</h1>
+      <h2 class="sub-title">
+        a <span class="underline">back</span>-end developer.
+      </h2>
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
+      <img class="mountain-img" src="images/mountain.png" alt="mountain-img" />
     </div>
-    <hr>
+    <hr />
     <div class="middle-container">
-        <div id="profile">
-            <img class="profile-img" src="images/ariel.png">
-            <h2>Hi there!</h2>
-            <p class="profile-description">
-                Welcome to my website, I'm a young developer who is just a student, but with tons of desire to become a software developer/web developer.
-            </p>
+      <div id="profile">
+        <img class="profile-img" src="images/ariel.png" />
+        <h2>Hi there!</h2>
+        <p class="profile-description">
+          Welcome to my website, I'm a young developer who is a student,
+          experienced developer with some hands-on real projects for my job,
+          using NodeJs,Mongo or MySQL as my main preferences and personal
+          projects for my clients. I can adapt to any programming languague, all
+          of them have the same core concepts.
+        </p>
+      </div>
+      <h2>Portfolio/Projects</h2>
+      <section class="portfolio">
+        <article class="portfolio-colunm">
+          <h3>Contact Form</h3>
+          <div class="portfolio-card">
+            <a href="https://arielor08.github.io/HTML-CSS-Form/"
+              ><img src="images/ModernForm.png" alt="Morden-Form"
+            /></a>
+          </div>
+          <p>
+            Here I design a simple contact form to practice my skills with HTML
+            and CSS
+          </p>
+          <p><strong>Technologies:</strong> HTML5,CSS</p>
+          <p><strong>Date:</strong> January 2020</p>
+        </article>
+        <article class="portfolio-colunm">
+          <h3>Photo Gallery</h3>
+          <div class="portfolio-card">
+            <a href="https://github.com/arielor08/Photo_Gallery"
+              ><img src="images/swiper_gallery.png" alt="Swiper-Gallery"
+            /></a>
+          </div>
+          <p>
+            With this  Project I learn how to make a Gallery with some animations and combine it with Node.Js the main
+            feature is to <strong>Add, Delete, Update and View</strong> an Image 
+          </p>
+          <p><strong>Technologies:</strong> HTML5,CSS, Node.Js, Express, HandleBars, Cloudinary, MongoDB</p>
+          <p><strong>Date:</strong> January 2020</p>
+        </article>
+      </section>
+      <div class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-row">
+          <img
+            class="web-des-img"
+            src="images/webdesign.png"
+            alt="web-design-img"
+          />
+          <h3>Web Design</h3>
+          <p class="web-skills-description">
+            Responsive Design. All you need to your page I will cover it.
+          </p>
         </div>
-        <div class="skills">
-            <h2>My Skills</h2>
-            <div class="skills-row">
-                <img class="web-des-img" src="images/webdesign.png" alt="web-design-img">
-                <h3>Web Design</h3>
-                <p class="web-skills-description">Responsive Design. All you need to your page I will cover it.</p>
-            </div>
-            <div class="skills-row">
-                <img class="web-dev-img" src="images/api.png" alt="web-development-img">
-                <h3>Web Development</h3>
-                <p class="dev-skills-description">Using the latest technology with JavaScript. I can create and take your WebSite to another level.</p>
-            </div>
-            <div class="skills-row">
-                <img class="code-img" src="images/javascript.png" alt="javascript-img">
-                <img class="code-img" src="images/nodejs.png" alt="nodejs-img">
-                <img class="code-img" src="images/react.png" alt="react-img">
-                <h3>Programing Languages</h3>
-                <p class="code-skills-description">This are the main language I use for make your WebSite strong and powerful.</p>
-            </div>
+        <div class="skills-row">
+          <img
+            class="web-dev-img"
+            src="images/api.png"
+            alt="web-development-img"
+          />
+          <h3>Web Development</h3>
+          <p class="dev-skills-description">
+            Using the latest technology with JavaScript. I can create and take
+            your WebSite to another level.
+          </p>
         </div>
+        <div class="skills-row">
+          <img
+            class="code-img"
+            src="images/javascript.png"
+            alt="javascript-img"
+          />
+          <img class="code-img" src="images/nodejs.png" alt="nodejs-img" />
+          <!-- <img class="code-img" src="images/react.png" alt="react-img" /> -->
+          <h3>Programing Languages</h3>
+          <p class="code-skills-description">
+            This are the main language I use for make your WebSite strong and
+            powerful.
+          </p>
+        </div>
+      </div>
     </div>
-    <hr>
+    <hr />
     <div class="bottom-container">
-        <div id="contact">
-            <h2>Get in Touch</h2>
-            <h3 class="pcontact">If you need something or want to hire me, do not doubt it and contact me!</h3>
-            <a class="button" href="mailto:ariel.ort08@hotmail.com">Contact me</a><br>
-            <div class="footer">
-                <a class="footer-link" href="https://www.linkedin.com/in/edwin-ariel-ortega-moreta-5689b3199/">Linkedin</a>
-                <h3 class="footer-text">&#169; 2020 Edwin Ariel Ortega Moreta @ Freelancer</h3>
-            </div>
+      <div id="contact">
+        <h2>Get in Touch</h2>
+        <h3 class="pcontact">
+          If you need something or want to hire me, do not doubt it and contact
+          me!
+        </h3>
+        <a class="button" href="mailto:ariel.ort08@hotmail.com">Contact me</a
+        ><br />
+        <div class="footer">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/edwin-ariel-ortega-moreta-5689b3199/"
+            >Linkedin</a
+          >
+          <h3 class="footer-text">
+            &#169; 2021 Edwin Ariel Ortega Moreta @ Developer
+          </h3>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

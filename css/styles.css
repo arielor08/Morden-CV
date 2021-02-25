@@ -1,126 +1,196 @@
 body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Roboto', serif;
-    line-height: 2;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  line-height: 2;
 }
 
 h1 {
-    margin: 100px auto 0 auto;
-    font-family: 'Courgette', serif;
-    font-size: 5.625rem;
-    color: #ecb390;
-    line-height: 2;
+  margin: 100px auto 0 auto;
+  font-family: 'Courgette', serif;
+  font-size: 5.625rem;
+  color: #ecb390;
+  line-height: 2;
 }
 
 h2 {
-    font-family: 'Righteous', serif;
-    font-size: 2.5rem;
-    color: #ecb390;
+  font-family: 'Righteous', serif;
+  font-size: 2.5rem;
+  color: #ecb390;
 }
 
 h3 {
-    color: #df7861;
-    font-family: 'Righteous', serif;
+  color: #df7861;
+  font-family: 'Righteous', serif;
 }
 
 a {
-    text-decoration: none;
-    color: #df7861;
+  text-decoration: none;
+  color: #df7861;
 }
 
 hr {
-    border-style: dotted none none none;
-    border-color: #ecb390;
-    width: 5%;
-    height: 50px;
-    border-width: 5px;
+  border-style: dotted none none none;
+  border-color: #ecb390;
+  width: 5%;
+  height: 50px;
+  border-width: 5px;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .top-container {
-    background-color: #fcf8e8;
-    padding-top: 100px;
-    position: relative;
+  background-color: #fcf8e8;
+  padding-top: 100px;
+  position: relative;
 }
 
 .top-cloud {
-    position: relative;
-    left: 150px;
+  position: relative;
+  left: 150px;
+  min-width: 2.5rem;
 }
 
 .bottom-cloud {
-    left: 250px;
-    position: absolute;
+  left: 250px;
+  position: absolute;
+  min-width: 2.5rem;
+}
+
+.mountain-img {
+  max-width: 40rem;
 }
 
 .profile-description {
-    width: 40%;
-    margin: auto;
+  width: 40%;
+  margin: auto;
 }
 
 .sub-title {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .skills-row {
-    width: 50%;
-    margin: 100px auto;
-    text-align: left;
-    line-height: 2;
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
 }
 
 .web-des-img {
-    width: 25%;
-    float: left;
-    margin: auto 30px auto auto;
+  width: 20%;
+  float: left;
+  margin: auto 30px auto auto;
 }
 
 .web-dev-img {
-    width: 25%;
-    float: right;
+  width: 20%;
+  float: right;
 }
 
 .code-img {
-    width: 25%;
+  width: 10%;
 }
 
 .pcontact {
-    width: 40%;
-    margin: auto;
+  width: 40%;
+  margin: auto;
 }
 
 .button {
-    display: inline-block;
-    background-color: #ecb390;
-    padding: 20px;
-    margin: 30px auto;
-    color: white;
-    border-radius: 10px;
-    font-size: 1.595rem;
-    box-shadow: 2px 3px #999;
+  display: inline-block;
+  background-color: #ecb390;
+  padding: 20px;
+  margin: 30px auto;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.595rem;
+  box-shadow: 2px 3px #999;
 }
 
 .button:hover {
-    background-color: #df7861;
+  background-color: #df7861;
 }
 
 .footer {
-    margin-top: 50px;
-    background-color: #df7861;
-    padding: 50px;
-    border: thin;
-    color: white;
+  margin-top: 50px;
+  background-color: #df7861;
+  padding: 50px;
+  border: thin;
+  color: white;
 }
 
 .footer-link {
-    color: #ecb390;
+  color: #ecb390;
 }
 
 .footer-text {
-    color: white;
-    font-size: 0.9rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+}
+
+.portfolio-colunm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  transition: 0.3s;
+}
+
+.portfolio-colunm:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-colunm p {
+  text-align: justify;
+  padding: 0 20px 0 20px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  max-width: 55rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-cloud {
+    max-width: 4rem;
+  }
+
+  .bottom-cloud {
+    max-width: 4rem;
+  }
+
+  .mountain-img {
+    max-width: 20rem;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .portfolio-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .web-des-img {
+    width: 40%;
+  }
+  
+  .web-dev-img {
+    width: 40%;
+  }
+  
+  .code-img {
+    width: 30%;
+  }
 }
